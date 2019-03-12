@@ -1,11 +1,11 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     csslint: {
       options: {
                 csslintrc: '.csslintrc'
           
       },
-        src: ['rectangle.css']
+        src: ['*.css']
         
     }
                
@@ -13,6 +13,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-csslint');
 
-      grunt.registerTask('default', ['csslint']);
+    grunt.registerTask('default', ['csslint']);
 
 };

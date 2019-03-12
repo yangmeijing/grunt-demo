@@ -15,7 +15,10 @@
     "grunt-htmlhint": "^0.9.13",
     "grunt-spritesmith": "^6.6.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-htmlhint": "^0.9.13"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,18 +1,22 @@
 module.exports = function (grunt) {
-  grunt.initConfig({
-        imagemin: {                               
-          files: {
-            expand: true,
-            src: ['images/*.{png,jpg,gif}'],
-            dest: 'dist/'
-                                       
-          }
-        }
-                
-  });
+    grunt.initConfig({
+      cssmin: {
+        options: {
+              mergeIntoShorthands: false,
+              roundingPrecision: -1
+        },
+        target: {
+            files: {
+              'dist/rectangle.css': ['./rectangle.css']
+            }
+               
+       }
 
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+      }
+    });
 
-    grunt.registerTask('default', ['imagemin']);    
+      grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-};
+      grunt.registerTask('default', ['cssmin']); 
+
+  };

@@ -1,18 +1,26 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-        imagemin: {                               
-          files: {
-            expand: true,
-            src: ['images/*.{png,jpg,gif}'],
-            dest: 'dist/'
-                                       
-          }
-        }
+    mochacli: {
+      options: {
+        reporter: 'spec',
+        bail: true
+        
+      },
+      all: ['test/*.js']
+                     
+    },
+    run:{
+      apiServer:{
+        
+      } 
+    }
                 
   });
 
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-mocha-cli');
+    grunt.loadNpmTasks('grunt-run');
 
-    grunt.registerTask('default', ['imagemin']);    
+
+    grunt.registerTask('default', ['run','mochacli','stop']);    
 
 };

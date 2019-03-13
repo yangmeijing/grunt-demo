@@ -11,7 +11,8 @@ module.exports = function (grunt) {
     },
     run:{
       apiServer:{
-        
+        options:{ wait:false },
+        args:['./app.js']
       } 
     }
                 

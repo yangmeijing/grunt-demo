@@ -4,12 +4,8 @@
   "description": "less预处理",
   "main": "index.js",
   "devDependencies": {
-    "chai": "^4.2.0",
     "grunt": ">=0.4.5",
-    "grunt-mocha": "^0.4.12",
-    "grunt-mocha-cli": "^4.0.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^6.0.2"
+    "grunt-mocha": "^0.4.12"
   },
   "scripts": {
     "test": "grunt"

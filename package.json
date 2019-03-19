@@ -2,7 +2,7 @@
   "name": "grunt-demo",
   "version": "1.0.0",
   "description": "less预处理",
-  "main": "index.js",
+  "main": "Gruntfile.js",
   "dependencies": {
     "8": "^0.0.1",
     "grunt-htmlhint": "^0.9.13",
